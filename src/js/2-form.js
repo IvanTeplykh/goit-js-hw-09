@@ -6,8 +6,7 @@ const formData = {
 const form = document.querySelector('.feedback-form');
 const STORAGE_KEY = 'feedback-form-state';
 
-// Populate from local storage on page load
-// Перевір, чи є дані у локальному сховищі.
+//
 try {
   const savedData = localStorage.getItem(STORAGE_KEY);
   if (savedData) {
