@@ -1,3 +1,8 @@
+// Описаний в документації
+import SimpleLightbox from 'simplelightbox';
+// Додатковий імпорт стилів
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -85,9 +90,7 @@ gallery.innerHTML = galleryMarkup;
 
 new SimpleLightbox('.gallery a', {
   captions: true,
-  captionSelector: 'img',
-  captionType: 'attr',
-  captionAttribute: 'alt',
+  captionsData: 'alt',
   captionDelay: 250,
   closeText: '×',
   navText: ['←', '→'],
