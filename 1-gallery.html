@@ -15,19 +15,21 @@
   </head>
   <body>
     <div class="gallery">
-      
-    <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
+      <ul class="gallery">
+        <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
 
-    <script>
-      new SimpleLightbox('.gallery a', {
-        captions: true,
-        captionSelector: 'img',
-        captionType: 'attr',
-        captionAttribute: 'alt',
-        captionDelay: 250,
-        closeText: '×',
-        navText: ['←', '→'],
-      });
-    </script>
+        <script>
+          new SimpleLightbox('.gallery a', {
+            captions: true,
+            captionSelector: 'img',
+            captionType: 'attr',
+            captionAttribute: 'alt',
+            captionDelay: 250,
+            closeText: '×',
+            navText: ['←', '→'],
+          });
+        </script>
+      </ul>
+    </div>
   </body>
 </html>
