@@ -3,33 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.css"
     />
-    <link rel="stylesheet" href="../css/stylesGallery.css" />
 
-    <title>Document</title>
+    <title>Gallery</title>
     <script type="module" crossorigin src="/goit-js-hw-09/1-gallery.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/stylesGallery-C3xnDAsW.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-09/assets/stylesGallery-CD5jQ6WC.css">
   </head>
   <body>
-    <div class="gallery">
-      <ul class="gallery">
-        <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
+    <ul class="gallery"></ul>
 
-        <script>
-          new SimpleLightbox('.gallery a', {
-            captions: true,
-            captionSelector: 'img',
-            captionType: 'attr',
-            captionAttribute: 'alt',
-            captionDelay: 250,
-            closeText: '×',
-            navText: ['←', '→'],
-          });
-        </script>
-      </ul>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
+    <script>
+      new SimpleLightbox('.gallery a', {
+        captions: true,
+        captionSelector: 'img',
+        captionType: 'attr',
+        captionAttribute: 'alt',
+        captionDelay: 250,
+        closeText: '×',
+        navText: ['←', '→'],
+      });
+    </script>
+
   </body>
 </html>
