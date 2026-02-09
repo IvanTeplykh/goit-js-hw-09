@@ -86,6 +86,7 @@ const galleryMarkup = images
   `;
   })
   .join('');
+
 gallery.innerHTML = galleryMarkup;
 
 new SimpleLightbox('.gallery a', {
